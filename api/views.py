@@ -92,7 +92,6 @@ class find_largest(APIView):
         end_time = datetime.now()
         turnaround_time = (end_time - start_time).total_seconds()
 
-    # Log the request and response
         log_entry = RequestLog(
           request_data=request.data,
           response_data=response_data,
